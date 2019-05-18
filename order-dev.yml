@@ -16,7 +16,7 @@ spring:
 #     service-url:
 #       defaultZone: http://localhost:8761/eureka/
 env:
-  dev21fffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  dev
 girl:
   name: Lucy
   age: 21
