@@ -18,5 +18,5 @@ spring:
 env:
   dev21fffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 girl:
-  name: Jim
+  name: Lucy
   age: 22
