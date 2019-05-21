@@ -1,6 +1,13 @@
 spring:
   application:
     name: order
+  cloud:
+    stream:
+      binders:
+        myinput:
+          destination: myStreamExchange #指定输入通道对应的主题名
+        myOutput:
+          destination: myStreamExchange
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
