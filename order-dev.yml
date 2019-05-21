@@ -7,6 +7,7 @@ spring:
         myInput:
           destination: myStreamExchange #指定输入通道对应的主题名
           group: orderGroup # 新加入的配置,只有一个实例接收消息
+          content-type: application/json
         myOutput:
           destination: myStreamExchange
   datasource:
