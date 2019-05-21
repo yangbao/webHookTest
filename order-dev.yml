@@ -4,7 +4,7 @@ spring:
   cloud:
     stream:
       binders:
-        myinput:
+        myInput:
           destination: myStreamExchange #指定输入通道对应的主题名
         myOutput:
           destination: myStreamExchange
