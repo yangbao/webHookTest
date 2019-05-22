@@ -2,12 +2,16 @@ spring:
   application:
     name: order
   cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
     stream:
       bindings:
         myInput:
           destination: myStreamExchange #指定输入通道对应的主题名
-          group: orderGroup # 新加入的配置,只有一个实例接收消息
-          content-type: application/json
+          group: orderGroup
         myOutput:
           destination: myStreamExchange
   datasource:
@@ -19,7 +23,7 @@ spring:
     show-sql: true
 #    format-sql: true
 #    use-sql-comments: true
-   rabbitmq:
+  rabbitmq:
     host: 192.168.43.9
     port: 5672
     username: guest
