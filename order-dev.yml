@@ -19,6 +19,11 @@ spring:
     show-sql: true
 #    format-sql: true
 #    use-sql-comments: true
+   rabbitmq:
+    host: 192.168.54.9
+    port: 5672
+    username: guest
+    password: guest
 #放到客户端
 # eureka:
 #   client:
