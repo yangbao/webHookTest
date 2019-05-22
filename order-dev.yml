@@ -24,10 +24,3 @@ spring:
     port: 5672
     username: guest
     password: guest
-#放到客户端
-# eureka:
-#   client:
-#     service-url:
-#       defaultZone: http://localhost:8761/eureka/
-env:
-  dev111111111
